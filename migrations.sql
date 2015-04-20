@@ -1,0 +1,7 @@
+CREATE DATABASE cats;
+
+\c cats;
+
+CREATE TABLE mama_cats (id SERIAL PRIMARY KEY, name VARCHAR(255));
+
+CREATE TABLE kittens (id SERIAL PRIMARY KEY, mama_cats_id INTEGER, name VARCHAR(255));
